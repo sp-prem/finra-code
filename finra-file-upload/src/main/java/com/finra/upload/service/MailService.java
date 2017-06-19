@@ -21,7 +21,7 @@ public class MailService
 {
 	@Autowired private FileMetaDataDao fileMetaDataDao;
 
-	@Scheduled(fixedRate = 5000)
+	@Scheduled(fixedRate = 60000)
 	public void determineIfNewFilesAreAdded() 
 	{
 		Date currentTime = new Date();
